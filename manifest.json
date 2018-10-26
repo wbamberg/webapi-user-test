@@ -3,17 +3,10 @@
     "name": "Web API user testing on the cheap",
     "version": "1.0",
 
-    "background": {
-        "scripts": [
-            "background.js"
-        ]
-    },
-
     "content_scripts": [
         {
-          "matches": ["https://developer.mozilla.org/en-US/docs/User:wbamberg/querySelectorExample", "https://interactive-examples.mdn.mozilla.net/pages/webapi-tabbed/document-queryselector.html"],
-          "js": ["content-script.js"],
-          "all_frames": true
+          "matches": ["https://developer.mozilla.org/en-US/docs/User:wbamberg/querySelectorExample"],
+          "js": ["content-script.js"]
         }
     ]
 }
